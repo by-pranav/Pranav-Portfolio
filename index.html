@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pranav Srivastava – Securities Operations Professional</title>
+<title>Pranav Srivastava – SME & Checker, Securities Operations</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -25,17 +25,19 @@
     content: ''; position: fixed; inset: 0;
     background-image:
       radial-gradient(1px 1px at 15% 20%, rgba(201,168,76,0.35) 0%, transparent 100%),
-      radial-gradient(1px 1px at 82% 8%, rgba(255,255,255,0.2) 0%, transparent 100%),
+      radial-gradient(1px 1px at 82% 8%,  rgba(255,255,255,0.2) 0%, transparent 100%),
       radial-gradient(1px 1px at 45% 65%, rgba(201,168,76,0.25) 0%, transparent 100%),
       radial-gradient(1px 1px at 72% 45%, rgba(255,255,255,0.15) 0%, transparent 100%),
       radial-gradient(1px 1px at 30% 80%, rgba(201,168,76,0.2) 0%, transparent 100%),
       radial-gradient(600px circle at 20% 0%, rgba(201,168,76,0.07) 0%, transparent 70%);
     pointer-events: none; z-index: 0;
   }
+
+  /* NAV */
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 18px 48px; display: flex; align-items: center; justify-content: space-between; background: rgba(11,22,41,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
   .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 600; color: var(--gold); letter-spacing: 0.05em; }
-  .nav-links { display: flex; gap: 32px; list-style: none; }
-  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.25s; }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.25s; }
   .nav-links a:hover { color: var(--gold); }
 
   /* HERO */
@@ -45,17 +47,18 @@
   .hero-eyebrow::before { content: ''; width: 32px; height: 1px; background: var(--gold); }
   .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 16px; }
   .hero h1 em { font-style: italic; color: var(--gold); }
-  .hero-role { font-size: 1.05rem; color: var(--muted); margin-bottom: 28px; font-weight: 400; letter-spacing: 0.03em; }
-  .hero-tagline { font-size: 1rem; color: rgba(248,244,236,0.75); max-width: 560px; line-height: 1.75; margin-bottom: 40px; }
+  .hero-role { font-size: 1.05rem; color: var(--muted); margin-bottom: 10px; font-weight: 400; letter-spacing: 0.03em; }
+  .hero-subrole { font-size: 0.85rem; color: rgba(201,168,76,0.7); margin-bottom: 28px; letter-spacing: 0.05em; }
+  .hero-tagline { font-size: 0.98rem; color: rgba(248,244,236,0.75); max-width: 580px; line-height: 1.78; margin-bottom: 40px; }
   .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
   .btn-primary { background: var(--gold); color: var(--navy); padding: 12px 28px; border-radius: 2px; text-decoration: none; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; transition: background 0.25s, transform 0.2s; display: inline-block; }
   .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
   .btn-ghost { border: 1px solid var(--border); color: var(--gold-pale); padding: 12px 28px; border-radius: 2px; text-decoration: none; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; transition: border-color 0.25s, color 0.25s, transform 0.2s; display: inline-block; }
   .btn-ghost:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-1px); }
-  .hero-stats { display: flex; gap: 40px; margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--border); animation: fadeUp 1s 0.45s ease both; opacity: 0; animation-fill-mode: both; }
+  .hero-stats { display: flex; gap: 36px; flex-wrap: wrap; margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--border); animation: fadeUp 1s 0.45s ease both; opacity: 0; animation-fill-mode: both; }
   .stat-item { text-align: center; }
-  .stat-number { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--gold); line-height: 1; display: block; }
-  .stat-label { font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-top: 6px; display: block; }
+  .stat-number { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 700; color: var(--gold); line-height: 1; display: block; }
+  .stat-label { font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-top: 6px; display: block; }
 
   /* MAIN */
   main { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 0 48px 100px; }
@@ -64,22 +67,30 @@
   .section-title { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 600; color: var(--cream); }
   .section-line { flex: 1; height: 1px; background: var(--border); }
   section { margin-bottom: 100px; }
+  .gold-divider { height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); opacity: 0.25; margin: 80px 0; }
 
   /* ABOUT */
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
-  .about-text { font-size: 0.95rem; line-height: 1.85; color: rgba(248,244,236,0.8); }
+  .about-text { font-size: 0.93rem; line-height: 1.85; color: rgba(248,244,236,0.8); }
   .about-text p + p { margin-top: 16px; }
-  .about-details { display: flex; flex-direction: column; gap: 12px; }
-  .detail-row { display: flex; align-items: flex-start; gap: 16px; padding: 14px 20px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 3px; backdrop-filter: blur(8px); }
+  .about-details { display: flex; flex-direction: column; gap: 10px; }
+  .detail-row { display: flex; align-items: flex-start; gap: 16px; padding: 13px 18px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 3px; backdrop-filter: blur(8px); }
   .detail-icon { font-size: 0.9rem; color: var(--gold); flex-shrink: 0; margin-top: 3px; }
-  .detail-label { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 3px; }
-  .detail-value { font-size: 0.88rem; color: var(--cream); font-weight: 400; }
+  .detail-label { font-size: 0.63rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 3px; }
+  .detail-value { font-size: 0.86rem; color: var(--cream); font-weight: 400; }
 
   /* RELOCATION BANNER */
   .reloc-banner { background: var(--card-bg); border: 1px solid var(--border); border-radius: 3px; padding: 16px 24px; backdrop-filter: blur(8px); display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 32px; }
-  .reloc-label { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); flex-shrink: 0; }
+  .reloc-label { font-size: 0.63rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); flex-shrink: 0; }
   .reloc-countries { display: flex; flex-wrap: wrap; gap: 10px; }
   .reloc-country { font-size: 0.8rem; color: var(--cream); background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.2); padding: 5px 14px; border-radius: 2px; letter-spacing: 0.04em; }
+
+  /* KEY METRICS */
+  .metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .metric-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 3px; padding: 22px 24px; backdrop-filter: blur(8px); text-align: center; transition: border-color 0.3s, transform 0.3s; }
+  .metric-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-3px); }
+  .metric-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--gold); line-height: 1; display: block; margin-bottom: 8px; }
+  .metric-label { font-size: 0.78rem; color: rgba(248,244,236,0.7); line-height: 1.5; }
 
   /* TIMELINE */
   .timeline { position: relative; padding-left: 32px; }
@@ -89,13 +100,26 @@
   .timeline-meta { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; flex-wrap: wrap; }
   .timeline-date { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); background: rgba(201,168,76,0.08); border: 1px solid rgba(201,168,76,0.2); padding: 4px 12px; border-radius: 2px; }
   .timeline-company { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
-  .timeline-title { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 600; color: var(--cream); margin-bottom: 6px; }
-  .timeline-client { font-size: 0.8rem; color: var(--gold); font-style: italic; margin-bottom: 20px; opacity: 0.85; }
-  .timeline-areas { display: flex; flex-direction: column; gap: 20px; }
-  .area-label { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; opacity: 0.8; }
+  .timeline-title { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 600; color: var(--cream); margin-bottom: 4px; }
+  .timeline-client { font-size: 0.8rem; color: var(--gold); font-style: italic; margin-bottom: 6px; opacity: 0.85; }
+  .timeline-scope { font-size: 0.8rem; color: var(--muted); margin-bottom: 24px; line-height: 1.6; }
+  .timeline-areas { display: flex; flex-direction: column; gap: 22px; }
+  .area-label { font-size: 0.67rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; opacity: 0.8; }
   .area-items { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-  .area-items li { font-size: 0.88rem; color: rgba(248,244,236,0.75); line-height: 1.6; padding-left: 16px; position: relative; }
+  .area-items li { font-size: 0.87rem; color: rgba(248,244,236,0.75); line-height: 1.62; padding-left: 16px; position: relative; }
   .area-items li::before { content: '›'; position: absolute; left: 0; color: var(--gold); font-weight: 600; }
+  .area-items li strong { color: var(--gold-light); font-weight: 500; }
+
+  /* PROCESS IMPROVEMENT — special cards */
+  .pi-grid { display: flex; flex-direction: column; gap: 16px; }
+  .pi-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 3px; padding: 22px 26px; backdrop-filter: blur(8px); transition: border-color 0.3s, transform 0.3s; position: relative; overflow: hidden; }
+  .pi-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--gold); opacity: 0; transition: opacity 0.3s; }
+  .pi-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-2px); }
+  .pi-card:hover::before { opacity: 1; }
+  .pi-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; color: var(--gold-light); margin-bottom: 8px; }
+  .pi-impact { display: inline-flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .pi-badge { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); background: rgba(201,168,76,0.1); border: 1px solid rgba(201,168,76,0.25); padding: 3px 10px; border-radius: 2px; }
+  .pi-desc { font-size: 0.86rem; color: rgba(248,244,236,0.72); line-height: 1.65; }
 
   /* ACCOMPLISHMENTS */
   .accomplishments-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
@@ -108,33 +132,34 @@
   .award-desc { font-size: 0.85rem; color: rgba(248,244,236,0.7); line-height: 1.65; }
 
   /* SKILLS */
-  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-  .skill-category { background: var(--card-bg); border: 1px solid var(--border); border-radius: 3px; padding: 28px; backdrop-filter: blur(8px); }
-  .skill-cat-title { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+  .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .skill-category { background: var(--card-bg); border: 1px solid var(--border); border-radius: 3px; padding: 26px; backdrop-filter: blur(8px); }
+  .skill-cat-title { font-size: 0.67rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
   .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-  .skill-tag { font-size: 0.75rem; color: rgba(248,244,236,0.8); background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.15); padding: 6px 12px; border-radius: 2px; letter-spacing: 0.03em; transition: background 0.2s, border-color 0.2s; }
+  .skill-tag { font-size: 0.74rem; color: rgba(248,244,236,0.8); background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.15); padding: 5px 11px; border-radius: 2px; letter-spacing: 0.03em; transition: background 0.2s, border-color 0.2s; }
   .skill-tag:hover { background: rgba(201,168,76,0.12); border-color: rgba(201,168,76,0.35); }
 
   /* CERTS */
-  .certs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .cert-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 3px; padding: 22px 26px; backdrop-filter: blur(8px); display: flex; align-items: flex-start; gap: 18px; transition: border-color 0.3s, transform 0.3s; }
+  .certs-section-label { font-size: 0.67rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin: 28px 0 16px; opacity: 0.8; }
+  .certs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .cert-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 3px; padding: 20px 24px; backdrop-filter: blur(8px); display: flex; align-items: flex-start; gap: 18px; transition: border-color 0.3s, transform 0.3s; }
   .cert-card:hover { border-color: rgba(201,168,76,0.4); transform: translateY(-2px); }
-  .cert-issuer-badge { flex-shrink: 0; width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+  .cert-issuer-badge { flex-shrink: 0; width: 42px; height: 42px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.58rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; text-align: center; }
   .badge-udemy    { background: rgba(164,69,0,0.25); color: #F05A28; border: 1px solid rgba(240,90,40,0.3); }
-  .badge-linkedin { background: rgba(0,119,181,0.2); color: #5BA4CF; border: 1px solid rgba(91,164,207,0.3); }
+  .badge-linkedin { background: rgba(0,119,181,0.2);  color: #5BA4CF; border: 1px solid rgba(91,164,207,0.3); }
   .badge-tcs      { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid var(--border); }
   .badge-pending  { background: rgba(248,244,236,0.06); color: var(--muted); border: 1px solid rgba(136,153,170,0.2); }
   .cert-info { flex: 1; }
-  .cert-name { font-size: 0.9rem; font-weight: 500; color: var(--cream); line-height: 1.4; margin-bottom: 6px; }
-  .cert-meta { font-size: 0.72rem; color: var(--muted); letter-spacing: 0.04em; }
-  .cert-meta span { color: var(--gold); opacity: 0.8; }
+  .cert-name { font-size: 0.89rem; font-weight: 500; color: var(--cream); line-height: 1.4; margin-bottom: 5px; }
+  .cert-meta { font-size: 0.71rem; color: var(--muted); letter-spacing: 0.04em; }
+  .cert-meta span { color: var(--gold); opacity: 0.85; }
 
   /* EDUCATION */
   .education-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .edu-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 3px; padding: 28px; backdrop-filter: blur(8px); }
   .edu-degree { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; color: var(--cream); margin-bottom: 8px; line-height: 1.35; }
   .edu-school { font-size: 0.85rem; color: var(--gold); margin-bottom: 6px; opacity: 0.85; }
-  .edu-meta { font-size: 0.78rem; color: var(--muted); }
+  .edu-meta { font-size: 0.78rem; color: var(--muted); line-height: 1.6; }
 
   /* BEYOND */
   .photography-block { background: var(--card-bg); border: 1px solid var(--border); border-radius: 3px; padding: 36px; backdrop-filter: blur(8px); display: flex; align-items: center; gap: 40px; }
@@ -157,8 +182,6 @@
   .open-to-reloc { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.08em; display: flex; align-items: center; justify-content: center; gap: 8px; }
   .reloc-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); animation: pulse 2s ease infinite; }
 
-  .gold-divider { height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); opacity: 0.25; margin: 80px 0; }
-
   @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.8); } }
   .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
@@ -169,8 +192,8 @@
     .nav-links { display: none; }
     .hero { padding: 100px 24px 60px; }
     main { padding: 0 24px 80px; }
-    .about-grid, .skills-grid, .accomplishments-grid, .certs-grid, .education-cards { grid-template-columns: 1fr; }
-    .hero-stats { gap: 24px; flex-wrap: wrap; }
+    .about-grid, .skills-grid, .accomplishments-grid, .certs-grid, .education-cards, .metrics-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 24px; }
     .contact-section { padding: 40px 24px; }
     .photography-block { flex-direction: column; gap: 20px; text-align: center; }
   }
@@ -183,28 +206,32 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
-    <li><a href="#accomplishments">Awards</a></li>
+    <li><a href="#impact">Impact</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
+<!-- HERO -->
 <div style="position:relative;z-index:1;">
   <div class="hero">
     <div class="hero-content">
       <p class="hero-eyebrow">Securities Operations Professional</p>
       <h1>Pranav<br><em>Srivastava</em></h1>
-      <p class="hero-role">TCS · Client: 3rd Largest European Bank · Gurugram, India</p>
-      <p class="hero-tagline">3+ years navigating derivatives, securities reconciliation, and financial risk — with a track record of saving FTEs, winning nodal awards, achieving zero open breaks (first in 26 years), and building processes that hold.</p>
+      <p class="hero-role">SME &amp; Checker — Securities Operations &amp; Reconciliation</p>
+      <p class="hero-subrole">TCS · Tier-1 European Bank (3rd Largest in Europe) · Gurugram, India</p>
+      <p class="hero-tagline">3+ years operating as SME and Checker in a high-volume, SLA-driven environment — specialising in corporate actions, Exchange Traded Derivatives, cash &amp; securities reconciliation, and asset servicing across Eurex, Euronext, the London Clearing House, and Euroclear. Recognised as Best Risk Mitigator Q3 FY26, delivered 1.5+ FTE in savings, and achieved zero open settlement breaks — first in 26 years.</p>
       <div class="hero-cta">
         <a href="mailto:pranavsri2308@gmail.com" class="btn-primary">Get In Touch</a>
-        <a href="https://by-pranav.github.io/Pranav-Portfolio/" target="_blank" class="btn-ghost">View Portfolio</a>
+        <a href="https://www.linkedin.com/in/pranav-srivastava-b948641b4" target="_blank" class="btn-ghost">LinkedIn Profile</a>
       </div>
       <div class="hero-stats">
         <div class="stat-item"><span class="stat-number">3+</span><span class="stat-label">Years Experience</span></div>
         <div class="stat-item"><span class="stat-number">1.5+</span><span class="stat-label">FTE Saved</span></div>
         <div class="stat-item"><span class="stat-number">$100K</span><span class="stat-label">Risk Prevented</span></div>
+        <div class="stat-item"><span class="stat-number">98%+</span><span class="stat-label">SLA Accuracy</span></div>
         <div class="stat-item"><span class="stat-number">5+</span><span class="stat-label">SOPs Authored</span></div>
       </div>
     </div>
@@ -213,6 +240,7 @@
 
 <main>
 
+  <!-- ABOUT -->
   <section id="about" class="reveal">
     <div class="section-header">
       <span class="section-number">01</span>
@@ -221,34 +249,72 @@
     </div>
     <div class="about-grid">
       <div class="about-text">
-        <p>I'm a Securities Operations &amp; Reconciliation professional based in Gurugram, India, with deep hands-on experience supporting the 3rd largest European bank through Tata Consultancy Services. My work sits at the intersection of financial risk, derivatives operations, and operational precision.</p>
-        <p>From resolving clearing and settlement breaks across Eurex, Euronext, and the London Clearing House, to executing high-volume expiry-day derivative reconciliations on the 3rd Friday of every month — I've built expertise through years on the front lines of financial operations. In January 2026, I achieved zero open breaks in Securities Operations: the first time in the project's 26-year history.</p>
-        <p>I'm actively targeting a move to Europe — the Netherlands, Ireland, Germany, or Switzerland — where I can bring my domain knowledge directly into an investment banking or financial services environment.</p>
+        <p>I'm a Securities Operations &amp; Reconciliation professional currently operating as SME and Checker at Tata Consultancy Services, supporting a Tier-1 European bank — the 3rd largest in Europe by assets. My work spans corporate actions &amp; asset servicing, Exchange Traded Derivatives settlements, cash and securities reconciliation across Eurex, Euronext, the London Clearing House, and Euroclear.</p>
+        <p>I specialise in identifying and resolving systemic process failures. My Six Sigma Green Belt project eliminated erroneous Nostro cross-bookings caused by incorrect SSIs — saving 1.24 FTE and reducing failing trades by 8–12%. I was recognised as Best Risk Mitigator (Q3 FY26) for blocking an erroneous USD 100,000 forex transaction and achieved zero open settlement breaks in January 2026, the first in the project's 26-year history.</p>
+        <p>I'm actively targeting a permanent move to Europe — Netherlands, Germany, Switzerland, Ireland, or Scotland — to apply this domain expertise within a regulated investment banking or asset management environment.</p>
       </div>
       <div class="about-details">
         <div class="detail-row"><span class="detail-icon">✉</span><div><span class="detail-label">Email</span><span class="detail-value">pranavsri2308@gmail.com</span></div></div>
         <div class="detail-row"><span class="detail-icon">☎</span><div><span class="detail-label">Phone</span><span class="detail-value">+91 7039218047</span></div></div>
-        <div class="detail-row"><span class="detail-icon">⊕</span><div><span class="detail-label">Open to Relocation</span><span class="detail-value">Netherlands · Ireland · Germany · Switzerland</span></div></div>
-        <div class="detail-row"><span class="detail-icon">◈</span><div><span class="detail-label">Languages</span><span class="detail-value">English (Expert) · Hindi (Native)</span></div></div>
-        <div class="detail-row"><span class="detail-icon">◉</span><div><span class="detail-label">Current Employer</span><span class="detail-value">Tata Consultancy Services</span></div></div>
+        <div class="detail-row"><span class="detail-icon">◈</span><div><span class="detail-label">Languages</span><span class="detail-value">English — Expert</span></div></div>
+        <div class="detail-row"><span class="detail-icon">◉</span><div><span class="detail-label">Current Role</span><span class="detail-value">SME &amp; Checker · Tata Consultancy Services</span></div></div>
       </div>
     </div>
     <div class="reloc-banner">
       <span class="reloc-label">Target Markets</span>
       <div class="reloc-countries">
         <span class="reloc-country">🇳🇱 Netherlands</span>
-        <span class="reloc-country">🇮🇪 Ireland</span>
         <span class="reloc-country">🇩🇪 Germany</span>
         <span class="reloc-country">🇨🇭 Switzerland</span>
+        <span class="reloc-country">🇮🇪 Ireland</span>
+        <span class="reloc-country">🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</span>
       </div>
     </div>
   </section>
 
   <div class="gold-divider"></div>
 
-  <section id="experience" class="reveal">
+  <!-- KEY METRICS -->
+  <section id="metrics" class="reveal">
     <div class="section-header">
       <span class="section-number">02</span>
+      <h2 class="section-title">Key Achievements</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <span class="metric-num">1.5+ FTE</span>
+        <div class="metric-label">Saved through sustained process improvement over 2 years, of which the Six Sigma SSI project contributed 1.24 FTE independently</div>
+      </div>
+      <div class="metric-card">
+        <span class="metric-num">8–12%</span>
+        <div class="metric-label">Reduction in failing trades achieved through root cause analysis and SSI remap for Euroclear Netherlands ISINs</div>
+      </div>
+      <div class="metric-card">
+        <span class="metric-num">$100K</span>
+        <div class="metric-label">Erroneous forex transaction blocked through proactive risk identification — Best Risk Mitigator Award, Q3 FY26</div>
+      </div>
+      <div class="metric-card">
+        <span class="metric-num">Zero</span>
+        <div class="metric-label">Open settlement breaks in January 2026 — first occurrence in the project's 26-year history</div>
+      </div>
+      <div class="metric-card">
+        <span class="metric-num">98%+</span>
+        <div class="metric-label">SLA accuracy maintained consistently throughout the engagement on same-day (24-hour) resolution targets</div>
+      </div>
+      <div class="metric-card">
+        <span class="metric-num">+3 FTE</span>
+        <div class="metric-label">Scope added through virtual onshore-to-offshore project migration without additional headcount</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="reveal">
+    <div class="section-header">
+      <span class="section-number">03</span>
       <h2 class="section-title">Experience</h2>
       <div class="section-line"></div>
     </div>
@@ -257,37 +323,51 @@
         <div class="timeline-dot"></div>
         <div class="timeline-meta">
           <span class="timeline-date">Sep 2022 – Present</span>
-          <span class="timeline-company">Tata Consultancy Services · Gurugram</span>
+          <span class="timeline-company">Tata Consultancy Services · Gurugram, India</span>
         </div>
-        <div class="timeline-title">Securities Operations &amp; Reconciliation Associate</div>
-        <div class="timeline-client">Client: Leading European Bank (3rd Largest European Bank)</div>
+        <div class="timeline-title">SME &amp; Checker — Securities Operations &amp; Reconciliation</div>
+        <div class="timeline-client">Client: Tier-1 European Bank [NDA] — 3rd Largest Bank in Europe by Assets</div>
+        <div class="timeline-scope">Multi-function operations role covering Corporate Actions, Settlements &amp; Clearing, Cash Operations, Securities Operations, and process improvement initiatives across Eurex, Euronext, the London Clearing House, and Euroclear.</div>
+
         <div class="timeline-areas">
           <div class="area-block">
-            <div class="area-label">Settlements &amp; Clearing Breaks</div>
+            <div class="area-label">Corporate Actions &amp; Asset Servicing</div>
             <ul class="area-items">
-              <li>Resolved clearing and settlement breaks for Eurex, Euronext, and the London Clearing House.</li>
-              <li>Investigated and resolved derivative breaks, including high-volume expiry-day reconciliations on the 3rd Friday of every month — a critical process requiring precision and strict attention to detail.</li>
-              <li>Handled SEPA payment processing and ensured compliance with European payment standards; successfully processed 100+ urgent SEPA payments in a single batch upon onshore request.</li>
-              <li>Coordinated with Static Data, Middle Office, Documentation, and clients to ensure accurate information flow.</li>
-              <li>Consistently met all Service Level Agreements (SLAs).</li>
+              <li>Managed complex corporate actions and income-related events including dividends, interest payments, rights issues, and other CA events for a portfolio of European securities.</li>
+              <li>Interpreted and processed <strong>SWIFT messages (MT564 — Corporate Action Notification, MT563 — Corporate Action Confirmation)</strong> to match CA events, verify entitlements, and ensure timely client payouts.</li>
+              <li>Conducted CA event setup, eligibility analysis, and entitlement reconciliation — ensuring accurate client positions were reflected across all systems prior to payout.</li>
+              <li>Verified and ensured timely cash payouts to clients by matching CA events with SWIFT confirmations; flagged and escalated discrepancies to the onshore team for resolution.</li>
+              <li>Maintained asset servicing records and ensured all income events were processed within SLA, with zero client payout failures during tenure.</li>
+            </ul>
+          </div>
+          <div class="area-block">
+            <div class="area-label">Settlements &amp; Clearing Operations</div>
+            <ul class="area-items">
+              <li>Executed and monitored settlements for Eurex and Euronext European exchanges, and the London Clearing House, handling an average of <strong>10–15 break investigations per week</strong>.</li>
+              <li>Investigated and resolved Exchange Traded derivative breaks including <strong>Options and Futures</strong>; ensured proper matching, allocation, and closure of Nostro breaks within same-day SLA targets.</li>
+              <li>Managed high-volume <strong>expiry-day derivative reconciliations on the 3rd Friday of each month</strong> — a peak-volume event requiring heightened precision and real-time problem solving.</li>
+              <li>Processed <strong>100+ urgent SEPA payments in a single batch</strong>, ensuring full compliance with European payment standards and internal documentation requirements upon onshore request.</li>
+              <li>Coordinated with Static Data, Middle Office, Documentation, and client teams to ensure accurate and timely information flow across all settlement activities.</li>
+              <li>Maintained <strong>98%+ SLA accuracy</strong> against same-day (24-hour) resolution targets consistently throughout the engagement.</li>
             </ul>
           </div>
           <div class="area-block">
             <div class="area-label">Cash Operations</div>
             <ul class="area-items">
-              <li>Ensured timely trade instruction, matching, and settlement; proactively reduced failing trades.</li>
-              <li>Investigated and resolved Nostro and Depot reconciliation breaks — including identifying a dual case-generation issue in Intellitracs where cases were swept twice (creating duplicates instead of clearing breaks), escalating to IT, and driving the fix to prevent recurrence.</li>
-              <li>Verified and ensured timely cash pay-outs to clients, including dividends and interest payments.</li>
-              <li>Managed and reported suspense account breaks; conducted daily clearing activities.</li>
-              <li>Prepared and executed Tax Return reports for French, Greek, and Italian markets.</li>
+              <li>Ensured timely trade instruction, matching, and settlement across all cash positions on a daily basis.</li>
+              <li>Verified accuracy of <strong>30–55 daily cash pay-outs</strong> including dividend and interest payments; identified and reported all discrepancies to the onshore team for correction.</li>
+              <li>Proactively monitored and reduced failing trades; investigated Nostro and Depot reconciliation breaks and mitigated risk through structured escalation processes.</li>
+              <li>Managed and reported suspense account breaks; conducted daily clearing activities to ensure all positions were accurately reflected at end of day.</li>
+              <li>Prepared and executed <strong>Tax Return reports for French, Greek, and Italian markets</strong> on a monthly basis.</li>
             </ul>
           </div>
           <div class="area-block">
             <div class="area-label">Securities Operations</div>
             <ul class="area-items">
-              <li>Investigated and resolved domestic and foreign securities breaks using Intellimatch and Intellitracs; prepared weekly resolution reports.</li>
-              <li>Ensured weekly regulation of securities breaks.</li>
-              <li>Resolved brokerage, settlement, asset, and market securities breaks daily via TCS Bancs — achieved zero open breaks in January 2026, the first occurrence in the project's 26-year history.</li>
+              <li>Investigated and resolved both domestic and foreign securities breaks on a daily basis using Intellimatch and Intellitracs; prepared comprehensive weekly break resolution reports.</li>
+              <li>Resolved brokerage, settlement, asset, and market securities breaks via TCS Bancs — achieved <strong>zero open breaks in January 2026, the first such occurrence in the project's 26-year history</strong>.</li>
+              <li>Ensured weekly regulation and compliance reporting of securities breaks in line with internal controls and client requirements.</li>
+              <li>Operated as <strong>SME and Checker</strong>, providing subject matter expertise and second-line quality assurance for all team outputs within the maker-checker control framework.</li>
             </ul>
           </div>
         </div>
@@ -297,57 +377,108 @@
 
   <div class="gold-divider"></div>
 
-  <section id="accomplishments" class="reveal">
+  <!-- PROCESS IMPROVEMENT -->
+  <section id="impact" class="reveal">
     <div class="section-header">
-      <span class="section-number">03</span>
-      <h2 class="section-title">Awards &amp; Impact</h2>
+      <span class="section-number">04</span>
+      <h2 class="section-title">Process Improvement</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="pi-grid">
+      <div class="pi-card">
+        <div class="pi-title">Six Sigma Green Belt — SSI Remap (Euroclear Netherlands)</div>
+        <div class="pi-impact">
+          <span class="pi-badge">1.24 FTE Saved</span>
+          <span class="pi-badge">8–12% Fail Rate Reduction</span>
+          <span class="pi-badge">Six Sigma DMAIC</span>
+        </div>
+        <div class="pi-desc">Identified that incorrect Standard Settlement Instructions (SSIs) for multiple ISINs were routing Euroclear Netherlands trades to Euroclear Brussels, creating a systemic failure requiring daily manual cross-bookings between two Nostro accounts. Conducted root cause analysis, proposed and validated the solution with the onshore team, and used the client's banking software to remap SSIs to the correct Nostro account — eliminating all manual intervention entirely and forming the core of the total 1.5+ FTE saved over 2 years.</div>
+      </div>
+      <div class="pi-card">
+        <div class="pi-title">Tax Reporting SLA Improvement</div>
+        <div class="pi-impact">
+          <span class="pi-badge">1-Day TAT Reduction</span>
+          <span class="pi-badge">Permanently Adopted</span>
+        </div>
+        <div class="pi-desc">Identified that monthly Tax Return reports for French, Greek, and Italian markets were being prepared on the 1st day of the following month. Proposed and implemented completing the reports on the last working day of the reporting month instead — reducing turnaround time by one full business day. The change was validated, approved, and permanently adopted by the team.</div>
+      </div>
+      <div class="pi-card">
+        <div class="pi-title">Intellitracs Dual Case-Generation Bug Fix</div>
+        <div class="pi-impact">
+          <span class="pi-badge">System Integrity Restored</span>
+          <span class="pi-badge">IT Escalation &amp; Fix</span>
+        </div>
+        <div class="pi-desc">Detected a system error where cases were being swept twice in Intellitracs, causing duplicate case generation instead of clearing the underlying breaks. Documented the issue, escalated to the IT team with full reproduction steps, validated the root cause analysis, and confirmed the permanent fix — preventing ongoing data integrity issues across the reconciliation workflow.</div>
+      </div>
+      <div class="pi-card">
+        <div class="pi-title">Project Onboarding &amp; Scope Expansion</div>
+        <div class="pi-impact">
+          <span class="pi-badge">+3 FTE Equivalent Scope</span>
+          <span class="pi-badge">Onshore–Offshore Migration</span>
+        </div>
+        <div class="pi-desc">Led the virtual onshore-to-offshore migration of a new project workstream, effectively adding the equivalent of three full-time employees' worth of operational scope to the team without additional headcount — independently managing a complex transition across geographies.</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gold-divider"></div>
+
+  <!-- AWARDS -->
+  <section id="awards" class="reveal">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <h2 class="section-title">Awards &amp; Recognition</h2>
       <div class="section-line"></div>
     </div>
     <div class="accomplishments-grid">
       <div class="accomplishment-card">
         <span class="award-icon">🏆</span>
         <div class="award-title">Best Risk Mitigator Award — Q3 FY26</div>
-        <div class="award-desc">Identified and prevented an incorrect forex transaction of USD 100,000. Nodal-level recognition given to one recipient per project per quarter — issued by BCCC Nodal Risk Team (on behalf of Murali Chellappa), Jan 2026.</div>
-      </div>
-      <div class="accomplishment-card">
-        <span class="award-icon">🔁</span>
-        <div class="award-title">Virtual Project Migration Lead</div>
-        <div class="award-desc">Migrated a new project from onshore virtually, absorbing the equivalent of three full-time employees' worth of work — independently managing a complex transition across geographies.</div>
-      </div>
-      <div class="accomplishment-card">
-        <span class="award-icon">⚡</span>
-        <div class="award-title">1.5+ FTE Saved in 2 Years</div>
-        <div class="award-desc">Delivered sustained process improvements resulting in 1.5+ FTE savings. A dedicated Six Sigma Green Belt project independently contributed 1.24 FTE in operational efficiencies.</div>
+        <div class="award-desc">Identified and prevented an erroneous forex transaction of USD 100,000 before execution. Nodal-level recognition — the highest risk management award at project level — given to one recipient per project per quarter. Issued by BCCC Nodal Risk Team (on behalf of Murali Chellappa), January 2026.</div>
       </div>
       <div class="accomplishment-card">
         <span class="award-icon">⭐</span>
-        <div class="award-title">Best Maker &amp; Employee of the Month × 3</div>
-        <div class="award-desc">Earned Best Maker Award for three consecutive months and Employee of the Month recognition three times within the past year. Also authored 5+ Standard Operating Procedures adopted across the team.</div>
+        <div class="award-title">Best Maker Award — 3 Consecutive Months</div>
+        <div class="award-desc">Awarded for achieving the highest accuracy in trade instruction and processing within the maker-checker control framework. Recognition is based on error rate, volume handled, and quality of checker outputs over consecutive months.</div>
+      </div>
+      <div class="accomplishment-card">
+        <span class="award-icon">🎖️</span>
+        <div class="award-title">Employee of the Month — 3 Times</div>
+        <div class="award-desc">Recognised three separate times within a 12-month period for overall contribution, initiative, and consistent performance above the expected standard across all operational functions.</div>
+      </div>
+      <div class="accomplishment-card">
+        <span class="award-icon">📋</span>
+        <div class="award-title">Knowledge Management — 5+ SOPs Authored</div>
+        <div class="award-desc">Written and formalised 5+ Standard Operating Procedures covering key operational processes, adopted across the team to standardise workflow, reduce knowledge gaps, and support onboarding of new team members.</div>
       </div>
     </div>
   </section>
 
   <div class="gold-divider"></div>
 
+  <!-- SKILLS -->
   <section id="skills" class="reveal">
     <div class="section-header">
-      <span class="section-number">04</span>
-      <h2 class="section-title">Skills</h2>
+      <span class="section-number">06</span>
+      <h2 class="section-title">Skills &amp; Competencies</h2>
       <div class="section-line"></div>
     </div>
     <div class="skills-grid">
       <div class="skill-category">
         <div class="skill-cat-title">Domain Expertise</div>
         <div class="skill-tags">
-          <span class="skill-tag">Financial Risk Analysis</span>
-          <span class="skill-tag">Derivatives Operations</span>
-          <span class="skill-tag">Options &amp; Futures</span>
+          <span class="skill-tag">Corporate Actions &amp; Asset Servicing</span>
+          <span class="skill-tag">Securities &amp; Derivatives Operations</span>
+          <span class="skill-tag">Exchange Traded Derivatives (Options &amp; Futures)</span>
+          <span class="skill-tag">Cash &amp; Securities Reconciliation</span>
           <span class="skill-tag">Settlements &amp; Clearing</span>
-          <span class="skill-tag">Securities Reconciliation</span>
-          <span class="skill-tag">Cash Reconciliation</span>
+          <span class="skill-tag">Nostro &amp; Depot Reconciliation</span>
           <span class="skill-tag">SEPA Payments</span>
-          <span class="skill-tag">Nostro Breaks</span>
+          <span class="skill-tag">SWIFT Messaging (MT564, MT563)</span>
           <span class="skill-tag">Tax Reporting (FR/GR/IT)</span>
+          <span class="skill-tag">NAV Calculation</span>
+          <span class="skill-tag">Forex Operations</span>
+          <span class="skill-tag">Capital Markets</span>
         </div>
       </div>
       <div class="skill-category">
@@ -356,23 +487,33 @@
           <span class="skill-tag">Intellimatch</span>
           <span class="skill-tag">Intellitracs</span>
           <span class="skill-tag">TCS Bancs</span>
-          <span class="skill-tag">Euroclear Portal</span>
           <span class="skill-tag">Murex</span>
+          <span class="skill-tag">Euroclear Portal</span>
           <span class="skill-tag">MS Office Suite</span>
-          <span class="skill-tag">Six Sigma (DMAIC)</span>
-          <span class="skill-tag">Financial Software</span>
         </div>
       </div>
       <div class="skill-category">
-        <div class="skill-cat-title">Professional Skills</div>
+        <div class="skill-cat-title">Regulatory &amp; Compliance</div>
         <div class="skill-tags">
-          <span class="skill-tag">Stakeholder Communication</span>
+          <span class="skill-tag">SEPA Compliance</span>
+          <span class="skill-tag">DORA (EU)</span>
+          <span class="skill-tag">GDPR</span>
+          <span class="skill-tag">EU AI Act</span>
+          <span class="skill-tag">MiFID II Awareness</span>
+          <span class="skill-tag">Cross-border Tax Reporting</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <div class="skill-cat-title">Professional &amp; Methodologies</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Six Sigma Green Belt (DMAIC)</span>
+          <span class="skill-tag">Lean Methodology</span>
+          <span class="skill-tag">Maker-Checker Framework</span>
+          <span class="skill-tag">SOP Authorship</span>
+          <span class="skill-tag">Stakeholder Management</span>
+          <span class="skill-tag">Onshore–Offshore Coordination</span>
+          <span class="skill-tag">Risk Identification &amp; Escalation</span>
           <span class="skill-tag">Process Improvement</span>
-          <span class="skill-tag">Cross-team Collaboration</span>
-          <span class="skill-tag">Client Relationship Mgmt</span>
-          <span class="skill-tag">SLA Management</span>
-          <span class="skill-tag">Risk Mitigation</span>
-          <span class="skill-tag">SOP Authoring</span>
         </div>
       </div>
     </div>
@@ -380,20 +521,27 @@
 
   <div class="gold-divider"></div>
 
+  <!-- CERTIFICATIONS -->
   <section id="certifications" class="reveal">
     <div class="section-header">
-      <span class="section-number">05</span>
+      <span class="section-number">07</span>
       <h2 class="section-title">Certifications</h2>
       <div class="section-line"></div>
     </div>
-    <div class="certs-grid">
+
+    <div class="certs-section-label">Operational &amp; Process Excellence</div>
+    <div class="certs-grid" style="margin-bottom:24px;">
       <div class="cert-card">
-        <div class="cert-issuer-badge badge-linkedin">LI</div>
+        <div class="cert-issuer-badge badge-pending">6σ</div>
         <div class="cert-info">
-          <div class="cert-name">Navigating the EU AI Act</div>
-          <div class="cert-meta">LinkedIn Learning · <span>Nov 2025</span> · AI, Responsible AI, EU Law</div>
+          <div class="cert-name">Six Sigma Green Belt</div>
+          <div class="cert-meta">Project Completed · <span>Certification Pending</span> · SSI remap — 1.24 FTE saved, 8–12% fail rate reduction</div>
         </div>
       </div>
+    </div>
+
+    <div class="certs-section-label">Regulatory &amp; Compliance — European Focus</div>
+    <div class="certs-grid" style="margin-bottom:24px;">
       <div class="cert-card">
         <div class="cert-issuer-badge badge-udemy">U</div>
         <div class="cert-info">
@@ -404,61 +552,68 @@
       <div class="cert-card">
         <div class="cert-issuer-badge badge-udemy">U</div>
         <div class="cert-info">
-          <div class="cert-name">Generative AI for Leaders &amp; Business Professionals</div>
-          <div class="cert-meta">Udemy · <span>Feb 2026</span> · 10 hrs · Yash Thakker</div>
+          <div class="cert-name">Introduction to GDPR – The Basic Facts</div>
+          <div class="cert-meta">Udemy · <span>Apr 2026</span> · 1 hr · Innovation Works UK</div>
         </div>
       </div>
       <div class="cert-card">
+        <div class="cert-issuer-badge badge-linkedin">LI</div>
+        <div class="cert-info">
+          <div class="cert-name">Navigating the EU AI Act</div>
+          <div class="cert-meta">LinkedIn Learning · <span>Nov 2025</span> · AI, Responsible AI, EU Law</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="certs-section-label">Technology &amp; Leadership</div>
+    <div class="certs-grid" style="margin-bottom:24px;">
+      <div class="cert-card">
         <div class="cert-issuer-badge badge-udemy">U</div>
         <div class="cert-info">
-          <div class="cert-name">Introduction to GDPR – The Basic Facts</div>
-          <div class="cert-meta">Udemy · <span>Apr 2026</span> · 1 hr · Innovation Works UK</div>
+          <div class="cert-name">Generative AI for Leaders &amp; Business Professionals</div>
+          <div class="cert-meta">Udemy · <span>Feb 2026</span> · 10 hrs · Yash Thakker</div>
         </div>
       </div>
       <div class="cert-card">
         <div class="cert-issuer-badge badge-tcs">TCS</div>
         <div class="cert-info">
           <div class="cert-name">TCS Gems — Best Risk Mitigator Certificate</div>
-          <div class="cert-meta">BCCC Nodal Risk Team · <span>Jan 2026</span> · Q3 FY26 Recognition</div>
-        </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-issuer-badge badge-pending">6σ</div>
-        <div class="cert-info">
-          <div class="cert-name">Six Sigma Green Belt</div>
-          <div class="cert-meta">Project Completed · <span>Certification Pending</span> · 1.24 FTE impact delivered</div>
+          <div class="cert-meta">BCCC Nodal Risk Team · <span>Jan 2026</span> · Q3 FY26 Nodal Recognition</div>
         </div>
       </div>
     </div>
+
   </section>
 
   <div class="gold-divider"></div>
 
+  <!-- EDUCATION -->
   <section id="education" class="reveal">
     <div class="section-header">
-      <span class="section-number">06</span>
+      <span class="section-number">08</span>
       <h2 class="section-title">Education</h2>
       <div class="section-line"></div>
     </div>
     <div class="education-cards">
       <div class="edu-card">
-        <div class="edu-degree">Post Graduate Diploma — International Business &amp; Finance</div>
-        <div class="edu-school">Symbiosis Centre For Distance Learning, Pune</div>
-        <div class="edu-meta">Expected June 2027</div>
-      </div>
-      <div class="edu-card">
         <div class="edu-degree">Bachelor of Business Administration — Finance</div>
         <div class="edu-school">Amity University Mumbai</div>
-        <div class="edu-meta">CGPA: 8.41 · Graduated June 2022</div>
+        <div class="edu-meta">CGPA: 8.41 / 10 · Graduated June 2022<br><br>Core Modules: Financial Markets &amp; Institutions, Corporate Finance, Investment Analysis, International Business, Accounting &amp; Auditing, Business Economics<br><br>Extra-Curricular: Media Head, Photography Club — visual content creation, event coverage, club communications.</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-degree">Post Graduate Diploma — International Business &amp; Finance</div>
+        <div class="edu-school">Symbiosis Centre for Distance Learning (SCDL), Pune</div>
+        <div class="edu-meta">Expected June 2027<br><br>Focus: International trade finance, global financial markets, cross-border business strategy, and financial risk management.</div>
       </div>
     </div>
   </section>
 
   <div class="gold-divider"></div>
 
+  <!-- BEYOND -->
   <section id="beyond" class="reveal">
     <div class="section-header">
-      <span class="section-number">07</span>
+      <span class="section-number">09</span>
       <h2 class="section-title">Beyond the Desk</h2>
       <div class="section-line"></div>
     </div>
@@ -466,7 +621,7 @@
       <div class="photography-icon">📷</div>
       <div class="photography-text">
         <h3>Photography — <em style="font-style:italic;color:var(--gold);">@by.pranav</em></h3>
-        <p>Outside of finance, I'm an active photographer. It's trained the same eye for detail and precision that I bring to my work in operations — just applied to light, composition, and the world around me.</p>
+        <p>Outside of finance, I'm an active photographer — the same eye for detail and precision I bring to operations, applied to light, composition, and the world around me. Served as Media Head of the Photography Club at Amity University.</p>
         <a href="https://www.instagram.com/by.pranav" target="_blank" class="photography-link">◈ View @by.pranav on Instagram →</a>
       </div>
     </div>
@@ -474,11 +629,12 @@
 
   <div class="gold-divider"></div>
 
+  <!-- CONTACT -->
   <section id="contact" class="reveal">
     <div class="contact-section">
       <div class="contact-eyebrow">Open to Opportunities</div>
       <h2 class="contact-headline">Let's <em>Connect</em></h2>
-      <p class="contact-sub">Seeking roles in European investment banking &amp; financial services.<br>Open to relocation — 🇳🇱 Netherlands · 🇮🇪 Ireland · 🇩🇪 Germany · 🇨🇭 Switzerland</p>
+      <p class="contact-sub">Seeking permanent roles in European investment banking, asset management &amp; financial services.<br>Open to relocation — 🇳🇱 Netherlands · 🇩🇪 Germany · 🇨🇭 Switzerland · 🇮🇪 Ireland · 🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland</p>
       <div class="contact-links">
         <a href="mailto:pranavsri2308@gmail.com" class="contact-link"><span>✉</span> pranavsri2308@gmail.com</a>
         <a href="tel:+917039218047" class="contact-link"><span>☎</span> +91 7039218047</a>
@@ -500,15 +656,15 @@
   const cardObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const cards = entry.target.querySelectorAll('.accomplishment-card, .cert-card, .skill-category, .edu-card');
+        const cards = entry.target.querySelectorAll('.accomplishment-card, .cert-card, .skill-category, .edu-card, .metric-card, .pi-card');
         cards.forEach((card, i) => {
-          setTimeout(() => { card.style.opacity='1'; card.style.transform='translateY(0)'; }, i * 90);
+          setTimeout(() => { card.style.opacity='1'; card.style.transform='translateY(0)'; }, i * 80);
         });
       }
     });
   }, { threshold: 0.08 });
 
-  document.querySelectorAll('.accomplishment-card, .cert-card, .skill-category, .edu-card').forEach(card => {
+  document.querySelectorAll('.accomplishment-card, .cert-card, .skill-category, .edu-card, .metric-card, .pi-card').forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(16px)';
     card.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
